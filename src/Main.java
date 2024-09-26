@@ -1,4 +1,3 @@
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -9,7 +8,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String hours;
         int control =0;
-        BigDecimal bd = new BigDecimal("0.1");
         while(control < 1){
             System.out.println("Please set the time, in format HH:MM:SS");
             hours= sc.nextLine();
