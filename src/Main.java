@@ -17,12 +17,13 @@ public class Main {
                 time.setTime(Integer.parseInt(timeArray[0]), Integer.parseInt(timeArray[1]), Integer.parseInt(timeArray[2]));
             }catch(IllegalArgumentException e){
                 System.out.println(e.getMessage());
-            }
-            System.out.println("Current time set as: "+time);
-            System.out.println("Do you want to set the time again? (Y/N)");
-            String answer = sc.nextLine();
-            if(answer.equalsIgnoreCase("N")) {
-                control++;
+            }finally {
+                System.out.println("The time is: " + time);
+                System.out.println("Do you want to set the time again? (Y/N)");
+                String answer = sc.nextLine();
+                if(answer.equals("N")){
+                    control++;
+                }
             }
         }
     }
